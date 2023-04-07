@@ -40,4 +40,4 @@ se build correctement avant de merge sur la branche `main`.
 4. Attendre la validation de la PR par les propriétaires du projet. Si la PR est validée, elle est mergée sur `main`
 6. Le site est automatiquement déployé sur Github Pages
 7. Votre contribution est visible sur [docs.sonarvision.fr](https://docs.sonarvision.fr)
-8. Vous pouvez supprimer votre branche
+8. Vous pouvez supprimer votre branche, à la fois en local et de votre fork.
