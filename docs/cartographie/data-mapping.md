@@ -45,7 +45,7 @@ Rendez-vous ensuite sur l'onglet "Modifier" et commencez à ajouter des informat
 Pour créer nos itinéraires, nous nous reposons sur les données piétonnes d'OpenStreetMap. Cependant, celles-ci restent
 encore très incomplètes dans la majorité des grandes villes françaises.
 Nous avons commencé notre travail de cartographie par Paris et notamment par le 15e et 17e arrondissements.
-Voici les informations principales dont nous avons besoins :
+Voici les informations principales dont nous avons besoin :
 
 - La position des
   trottoirs ([Trottoir comme voie séparée](https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton#Trottoir))
