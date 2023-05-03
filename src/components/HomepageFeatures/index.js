@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Une experience humaine',
+    title: 'Une expérience humaine',
     Svg: require('@site/static/img/undraw_pedestrian_crossing.svg').default,
     description: (
       <>
