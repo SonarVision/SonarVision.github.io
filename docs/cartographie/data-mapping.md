@@ -76,7 +76,7 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
    clavier `B`
 3. Cliquer sur modifier le fond de carte personnalisé
 4. Ajouter l'URL
-   suivante : `https://api.mapbox.com/styles/v1/la-monf/clatfbyq3000514qnaejzcsmy/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGEtbW9uZiIsImEiOiJjbGFhejhqdnEwY201M3VwbDZpbmd5ZHZpIn0.-HQmXshZmvpEN6SAeYRlpQ`
+   suivante : `https://api.mapbox.com/styles/v1/n8dx/cljidfsdc002601pqdx0vhosw/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibjhkeCIsImEiOiJja2pwNzE0cTMwY2EyMnRuNXExeWtpM2M0In0.94CktFP6v5D0_qjyQh-Dvg`
 5. Enfin, cliquer sur "Ok" et sélectionner le fond de carte personnalisé
 
 ![gif tuyo fond de carte](Tuto_fond_de_carte.gif 'tutoriel: comment ajouter un fond de carte personalisé à ID')
