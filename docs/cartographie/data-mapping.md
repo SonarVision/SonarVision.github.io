@@ -76,7 +76,7 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
    clavier `B`
 3. Cliquer sur modifier le fond de carte personnalisé
 4. Ajouter l'URL
-   suivante : `http://34.163.114.80:8080/styles/WithBackground/{z}/{x}/{y}.jpeg`
+   suivante : `http://34.163.114.80:8080/styles/SansFond/{z}/{x}/{y}.png`
 5. Enfin, cliquer sur "Ok" et sélectionner le fond de carte personnalisé
 
 ![gif tuyo fond de carte](Tuto_fond_de_carte.gif 'tutoriel: comment ajouter un fond de carte personalisé à ID')
