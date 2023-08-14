@@ -59,9 +59,33 @@ Vous trouverez également une liste de raccourcis clavier que nous avons créés
 
 L'utilisation de filtres permet de rapidement sélectionner des éléments en fonction de leurs attributs. 
 
-Un exemple d'utilisation que l'on rencontre fréquemment est le suivant : lors du mapping de trottoirs, sans devoir donner un attribut aux trottoirs tracés, on peut mapper une grande zone, puis sélectionner à la fin tout le filaire sans attribut avec le filtre *=* (qui filtre tous les éléments ayant au moins un attribut) et utiliser le raccourcis clavier qui donne les attributs de trottoirs à la sélection
+Un exemple d'utilisation que l'on rencontre fréquemment est le suivant : lors du mapping de trottoirs, sans devoir donner un attribut aux trottoirs tracés, on peut mapper une grande zone, puis sélectionner à la fin tout le filaire sans attribut avec le filtre *=* (qui filtre tous les éléments ayant au moins un attribut) et utiliser le raccourcis clavier qui donne les attributs de trottoirs à la sélection.
 
 Vous trouverez une liste de filtres souvent utiles [ici](google.com).
+
+Les points suivants sont plus subjectifs et principalement une question de préférence, mais ce sont des techniques qui nous ont semblées efficaces pour mapper une grande zone rapidement.
+
+### Déconstruire le mapping au maximum
+
+Lorsque vous décidez de mapper une région donnée, il est souvent préférable de tracer tous les trottoirs bloc par bloc, puis tous les passages piétons.
+
+Dans le cas des trottoirs, ils comportent pratiquement tous exactement les mêmes attributs (highway=footway, footway=crossing) et donc il suffit de leur donner cet attribut à la fin du tracé de filaire de la région. 
+
+Dans le cas des passages piétons, la majorité est de type passage piéton marqué non contrôlés, c'est à dire sans feux de circulation. Lorsqu'un passage piéton différent de ceux-ci sont mappés, il est pertinent de donner directement l'attribut correspondant au passage piéton. Pour les passages piétons non contrôlés, il suffit de leur donner le bon attribut à la fin du tracé de filaire passage piéton, comme pour les trottoirs.
+
+Attention à s'assurer que les seuls objets sans attributs doivent tous avoir le même attribut ! D'où l'importance de traiter intégralement les trottoirs et seulement après les passages piétons.
+
+### Suivre l'avancée du mapping grâce aux filtres JOSM
+
+Dans une région donnée, lorsque l'on mappe du filaire piéton, un filtre highway=footway (inversé) permet de mettre en valeur tous les trottoirs et passages piéton de la région. Cela permet de rapidement visualiser les trous et de les combler afin d'avoir un mapping bien complet.
+
+### Sélectionner des régions à mapper qui se chevauchent
+
+En effet, pour s'assurer de ne pas laisser de trous entre deux bordures de sélection, il est important de laisser une zone de chevauchement entre les sélections de mapping, d'autant plus que des petits trous dans le mapping ne sont pas faciles à identifier ! 
+
+### Uploader régulièrement son travail 
+
+Pour ne pas être bloqué par un conflit entre différentes versions d'une région donnée et être contraint à perdre un travail effectué sur une grande durée, il est important de régulièrement uploader son mapping. Deux ou trois uploads par heure sont conseillés.
 
 ## Utiliser Overpass
 
@@ -101,4 +125,3 @@ Cette requète permet de visualiser les noeuds de croisements entre voie piéton
 Note : Elle met également en évidence les croisements entre voie cyclable et voie routière qui nous concernent pas forcément. 
 
 Ici, la zone sur laquelle la requête est effectuée est Paris intra-muros, dont le nom est "Zone à Circulation Restreinte de la Ville de Paris". Pour effectuer une requête sur une autre zone, il suffit de remplacer ce texte par l'identifiant de la zone souhaitée.
-
