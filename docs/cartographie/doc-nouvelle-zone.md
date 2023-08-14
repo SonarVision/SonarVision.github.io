@@ -24,7 +24,18 @@ Ce qui fait de [JOSM](https://josm.openstreetmap.de/) un éditeur rapide et la p
 
 Pour créer un raccourci clavier, téléchargez ce plugin. 
 
-Vous trouverez également une liste de raccourcis clavier fortement recommandés [ici](google.com).
+Les raccourcis clavier que nous avons été amenés à utiliser fréquemment sont les suivants : 
+
+s - passer en mode sélection 
+
+a - passer en mode tracé de filaire
+
+alt + click gauche - permet de poursuivre un tracé filaire sans copier les attributs de l'objet dont on part, pratique pour le tracé de passage piéton sans copier/coller l'attribut non souhaité des trottoirs auxquel il est connecté
+
+double click gauche - placer un point et finaliser un tracé filaire en ce point, pratique dès que l'on arrive à un cul de sac en filaire trottoir
+
+
+Vous trouverez également une liste de raccourcis clavier que nous avons créés [ici](google.com).
 
 -ajout d'attributs pour les trottoirs 
 
@@ -58,4 +69,36 @@ Vous trouverez une liste de filtres souvent utiles [ici](google.com).
 
 C'est un outil indispensable pour contrôler le mapping, et mettre en évidence un mapping incomplet ou incorrect.
 
-Vous trouverez [ici](google.com) une liste de requêtes Overpass permettant de contrôler des mappings à corriger que l'on retrouve fréquemment.
+Voici une liste de requêtes Overpass permettant de contrôler des mappings à corriger que l'on retrouve fréquemment :
+
+[out:json][timeout:25];
+// gather results
+  (
+    area[name="Zone à Circulation Restreinte de la Ville de Paris"];
+  )->.searchArea;
+  (
+    area[name="Zone à Circulation Restreinte de la Ville de Paris"]; 
+  )->.limitArea;
+  (
+    .searchArea;
+    way["footway"](area);
+  ) -> .footways;
+( 
+
+  (
+    node["highway"="crossing"]["crossing"](area.searchArea)(area.limitArea);
+    - node(w.footways);
+  );
+  
+);
+// print results
+out body;
+>;
+out skel qt;
+
+Cette requète permet de visualiser les noeuds de croisements entre voie piétonne et voie routière non connectés à un passage piéton filaire, et donc de compléter des passages piétons manquants ou supprimer des noeuds de passages piéton archaïques ou mal positionnés.
+
+Note : Elle met également en évidence les croisements entre voie cyclable et voie routière qui nous concernent pas forcément. 
+
+Ici, la zone sur laquelle la requête est effectuée est Paris intra-muros, dont le nom est "Zone à Circulation Restreinte de la Ville de Paris". Pour effectuer une requête sur une autre zone, il suffit de remplacer ce texte par l'identifiant de la zone souhaitée.
+
