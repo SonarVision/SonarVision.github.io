@@ -16,7 +16,7 @@ La grande majorité de Paris intra-muros a été mappé sur OpenStreetMap, mais 
 
 Les fonds de carte sont indispensables pour s'assurer que le mapping effectué est précis. 
 
-Vous trouverez [ici](google.com) une liste de fonds de cartes importants en fonction de vos besoins et préférences. 
+Vous trouverez **TODO** une liste de fonds de cartes importants en fonction de vos besoins et préférences. 
 
 ### Utiliser des raccourcis clavier
 
@@ -35,7 +35,7 @@ alt + click gauche - permet de poursuivre un tracé filaire sans copier les attr
 double click gauche - placer un point et finaliser un tracé filaire en ce point, pratique dès que l'on arrive à un cul de sac en filaire trottoir
 
 
-Vous trouverez également une liste de raccourcis clavier que nous avons créés [ici](google.com).
+Vous trouverez également une liste de raccourcis clavier que nous avons créés **TODO**.
 
 -ajout d'attributs pour les trottoirs 
 
@@ -61,7 +61,7 @@ L'utilisation de filtres permet de rapidement sélectionner des éléments en fo
 
 Un exemple d'utilisation que l'on rencontre fréquemment est le suivant : lors du mapping de trottoirs, sans devoir donner un attribut aux trottoirs tracés, on peut mapper une grande zone, puis sélectionner à la fin tout le filaire sans attribut avec le filtre *=* (qui filtre tous les éléments ayant au moins un attribut) et utiliser le raccourcis clavier qui donne les attributs de trottoirs à la sélection.
 
-Vous trouverez une liste de filtres souvent utiles [ici](google.com).
+Vous trouverez une liste de filtres souvent utiles **TODO**.
 
 Les points suivants sont plus subjectifs et principalement une question de préférence, mais ce sont des techniques qui nous ont semblées efficaces pour mapper une grande zone rapidement.
 
@@ -95,6 +95,7 @@ C'est un outil indispensable pour contrôler le mapping, et mettre en évidence 
 
 Voici une liste de requêtes Overpass permettant de contrôler des mappings à corriger que l'on retrouve fréquemment :
 
+```
 [out:json][timeout:25];
 // gather results
   (
@@ -119,6 +120,7 @@ Voici une liste de requêtes Overpass permettant de contrôler des mappings à c
 out body;
 >;
 out skel qt;
+```
 
 Cette requète permet de visualiser les noeuds de croisements entre voie piétonne et voie routière non connectés à un passage piéton filaire, et donc de compléter des passages piétons manquants ou supprimer des noeuds de passages piéton archaïques ou mal positionnés.
 
