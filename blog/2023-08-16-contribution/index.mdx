@@ -17,7 +17,7 @@ Au cours de l'été 2023, l'équipe SonarVision a entrepris le projet de cartogr
 
 ## Pourquoi ?
 
-Nous développons une application GPS permettant de guider les personnes déficientes visuelles de manière ultra-précise, nommée SonarVision. Afin de proposer des trajets adaptés, qui suivent les trottoirs et empruntent les passages piétons, il était nécessaire de disposer de données piétonnes précises, qui identifient ces trottoirs et passages piétons comme des voies **séparées**.
+Nous développons une application GPS permettant de guider les personnes déficientes visuelles de manière ultra-précise, nommée SonarVision. Afin de proposer des trajets adaptés, qui suivent les trottoirs et empruntent les passages piétons, il était nécessaire de disposer de données piétonnes précises, qui identifient ces trottoirs et passages piétons comme des [**voies séparées**](https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons#Trottoir_comme_voie_s%C3%A9par%C3%A9e_(recommand%C3%A9)).
 
 Grâce à cette donnée, nous pouvons alors guider nos utilisateurs d'un point A à un point B avec une précision de l'ordre du mètre.
 
@@ -26,9 +26,9 @@ Grâce à cette donnée, nous pouvons alors guider nos utilisateurs d'un point A
 ## Comment ?
 
 Avec l'aide précieuse de nos trois stagiaires cet été, nous avons passé plus de 500 heures à virtuellement sillonner les rues de Paris afin d'y ajouter le filaire piéton en conformité avec les [directives](https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons) de la communauté OpenStreetMap.
-Notre objectif était de cartographier un graphe piéton sur lequel nous pourrions exécuter un calculateur d'itinéraire piéton, **qui n'utilise jamais les voies routières, seulement les chemins piétons**. Le pari est réussi et nous pouvons à présent calculer des trajets piétons *accessibles* entre [n'importe quels deux points de la ville de Paris](https://nav.sonarvision.fr/maps/?point=48.847777%2C2.313967&point=48.849234%2C2.336983&profile=foot&layer=OpenStreetMap).
+Notre objectif était de compléter un graphe piéton sur lequel nous pourrions exécuter un calculateur d'itinéraire, **qui n'utilise jamais les voies routières, seulement les chemins piétons**. Le pari est réussi et nous pouvons à présent calculer des trajets piétons *accessibles* entre [n'importe quels deux points de la ville de Paris](https://nav.sonarvision.fr/maps/?point=48.847777%2C2.313967&point=48.849234%2C2.336983&profile=foot&layer=OpenStreetMap).
 
-Ce travail a été en partie financé par l'[État dans le cadre de France 2030](https://www.economie.gouv.fr/france-2030).
+Les travaux réalisés par SonarVision ont été en partie financés par l'[État dans le cadre de France 2030](https://www.economie.gouv.fr/france-2030).
 <img src={"/img/Logotype-rouge-bleu.png"} alt="Logo France 2030" width="100"/>
 
 
@@ -38,7 +38,7 @@ Nous n'avons pas fait ce travail seuls !
 
 Nous tenons à remercier l'équipe de [Jungle Bus](https://junglebus.io/en/mobility-open-data-proudly-crafted-by-the-openstreetmap-community-2/) qui nous a conseillé et aidé lors de ce projet. Dans le cadre du projet [Eazyway](https://wiki.openstreetmap.org/wiki/France/Eazyway), ils ont réalisé des [prises d'images 360°](https://www.mapillary.com/app/org/arrow) dans la rue ainsi que de la [cartographie de filaire piéton](https://overpass-turbo.eu/s/1z0N). Leur équipe a fait d'importants travaux de [communication](https://peertube.openstreetmap.fr/w/o5AWXYerrMs7Us7v1YLdCF) et de [documentation](https://wiki.openstreetmap.org/wiki/France/Eazyway) au sujet de la cartographie piétonne. Merci à vous !
 
-Nous remercions également les nombreux contributeurs OpenStreetMap qui ont participés à la cartographie piétonne, ainsi qu'à la coexistence de ce nouveau graphe piéton avec les nœuds et voies existantes. Merci à [Benoît Chaumeret](https://www.openstreetmap.org/user/Beno%C3%AEt%20C%20MdP) pour ses conseils et ses corrections qui nous ont empêchés d'accidentellement casser le graphe cycliste parisien...
+Nous remercions également les nombreux contributeurs OpenStreetMap qui ont participés à la cartographie piétonne parisienne, ainsi qu'à la coexistence de ce nouveau graphe piéton avec les nœuds et voies existantes. Merci en particulier à [Benoît Chaumeret](https://www.openstreetmap.org/user/Beno%C3%AEt%20C%20MdP) pour ses conseils et ses corrections qui nous ont empêchés d'accidentellement casser le graphe cycliste parisien...
 
 ## L'Open Data et Open Street Map
 
