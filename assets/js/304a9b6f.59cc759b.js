@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[31],{2082:s=>{s.exports=JSON.parse('{"permalink":"/blog/tags/presentation","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

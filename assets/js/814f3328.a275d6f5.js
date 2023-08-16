@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"1.3.1 - B\xeata","permalink":"/blog/Mise \xe0 jour"},{"title":"Bienvenue","permalink":"/blog/Bienvenue"}]}')}}]);
