@@ -1,5 +1,5 @@
 ---
-slug: Mise à jour
+slug: maj-1.3.1
 title: 1.3.1 - Bêta
 authors: [augustin]
 tags: [sonarvision, bêta]

@@ -1,0 +1,63 @@
+---
+slug: graphe-pieton-parisien
+title: Notre contribution au graphe piéton parisien
+authors: [nathan]
+tags: [sonarvision, cartographie, piéton, contribution, openstreetmap]
+---
+
+import {VisualsMapComponent} from "@site/src/components/Maps/VisualsMapComponent";
+
+Au cours de l'été 2023, l'équipe SonarVision a entrepris le projet de cartographier tous les trottoirs et les passages piétons de la ville de Paris.
+
+## Carte interactive
+
+<VisualsMapComponent/>
+
+*Donnée extraite le 14 août 2023 grâce à Overpass : https://overpass-turbo.eu/s/1z0P*
+
+## Pourquoi ?
+
+Nous développons une application GPS permettant de guider les personnes déficientes visuelles de manière ultra-précise, nommée SonarVision. Afin de proposer des trajets adaptés, qui suivent les trottoirs et empruntent les passages piétons, il était nécessaire de disposer de données piétonnes précises, qui identifient ces trottoirs et passages piétons comme des voies **séparées**.
+
+Grâce à cette donnée, nous pouvons alors guider nos utilisateurs d'un point A à un point B avec une précision de l'ordre du mètre.
+
+[**Visionner la démo de l'application SonarVision**](https://www.youtube.com/watch?v=geGq59f11z0)
+
+## Comment ?
+
+Avec l'aide précieuse de nos trois stagiaires cet été, nous avons passé plus de 500 heures à virtuellement sillonner les rues de Paris afin d'y ajouter le filaire piéton en conformité avec les [directives](https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons) de la communauté OpenStreetMap.
+Notre objectif était de cartographier un graphe piéton sur lequel nous pourrions exécuter un calculateur d'itinéraire piéton, **qui n'utilise jamais les voies routières, seulement les chemins piétons**. Le pari est réussi et nous pouvons à présent calculer des trajets piétons *accessibles* entre [n'importe quels deux points de la ville de Paris](https://nav.sonarvision.fr/maps/?point=48.847777%2C2.313967&point=48.849234%2C2.336983&profile=foot&layer=OpenStreetMap).
+
+Ce travail a été en partie financé par l'[État dans le cadre de France 2030](https://www.economie.gouv.fr/france-2030).
+<img src={"/img/Logotype-rouge-bleu.png"} alt="Logo France 2030" width="100"/>
+
+
+## Collaboration
+
+Nous n'avons pas fait ce travail seuls !
+
+Nous tenons à remercier l'équipe de [Jungle Bus](https://junglebus.io/en/mobility-open-data-proudly-crafted-by-the-openstreetmap-community-2/) qui nous a conseillé et aidé lors de ce projet. Dans le cadre du projet [Eazyway](https://wiki.openstreetmap.org/wiki/France/Eazyway), ils ont réalisé des [prises d'images 360°](https://www.mapillary.com/app/org/arrow) dans la rue ainsi que de la [cartographie de filaire piéton](https://overpass-turbo.eu/s/1z0N). Leur équipe a fait d'importants travaux de [communication](https://peertube.openstreetmap.fr/w/o5AWXYerrMs7Us7v1YLdCF) et de [documentation](https://wiki.openstreetmap.org/wiki/France/Eazyway) au sujet de la cartographie piétonne. Merci à vous !
+
+Nous remercions également les nombreux contributeurs OpenStreetMap qui ont participés à la cartographie piétonne, ainsi qu'à la coexistence de ce nouveau graphe piéton avec les nœuds et voies existantes. Merci à [Benoît Chaumeret](https://www.openstreetmap.org/user/Beno%C3%AEt%20C%20MdP) pour ses conseils et ses corrections qui nous ont empêchés d'accidentellement casser le graphe cycliste parisien...
+
+## L'Open Data et Open Street Map
+
+Tout notre travail est librement disponible sur [OpenStreetMap (OSM)](https://fr.wikipedia.org/wiki/OpenStreetMap). N'importe qui peut y accéder, l'améliorer, et l'exploiter commercialement. Cette donnée sert déjà à améliorer vos trajets piétons dans des applications grand-public telles qu'Apple Plans, qui [incorpore de la donnée OSM dans ses cartes](https://www.apple.com/legal/internet-services/maps/legal-en.html).
+
+Notre objectif est qu'un maximum de développeurs utilisent cette donnée piétonne dans leurs applications - y compris nos concurrents. Ce que nous espérons, c'est que la communauté OpenStreetMap toute entière participera à **l'entretenir, l'améliorer et la protéger**. Cela permettrait une meilleure expérience pour les utilisateurs et réduirait considérablement les coûts liés au maintien d'une base de donnée cartographique propriétaire.
+
+Cette première passe cartographique de Paris intra-muros a été grandement facilitée par la disponibilité de données Open Data telle que les données sur les [bordures et emprises des trottoirs de la Ville de Paris](../../docs/cartographie/data-mapping#base-de-donn%C3%A9es-utilis%C3%A9e-par-notre-fond-de-carte) ou le fond de carte [BDOrtho d'IGN](https://geoservices.ign.fr/documentation/services/api-et-services-ogc/images-tuilees-wmts-ogc). Nous mettons à disposition [un fond de carte](https://maps.sonarvision.fr/styles/SansFond/#12/48.8597/2.3478), régulièrement mis-à-jour avec les données Open Data de la Ville de Paris pour les cartographes intéressés. Un [tuto](/docs/cartographie/data-mapping#comment-aider-sonarvision-avec-ses-contributions-) est aussi disponible.
+
+## La suite
+
+Au cours des prochains mois, nous allons principalement exploiter ces données afin de créer des trajets pour nos clients, à savoir des personnes déficientes visuelles cherchant à se déplacer de manière autonome à Paris.
+
+Nous allons donc continuer à améliorer le graphe piéton parisien puis de la petite couronne afin que notre service soit disponible au plus grand nombre.
+
+Si vous êtes contributeur OSM, nous avons besoin d'aide avec la cartographie de la petite couronne ! Nous sommes aussi à la recherche de partenaires au sein de la Ville de Paris, de la Métropole du Grand Paris, de la RATP, SNCF, IGN ou autres pour collaborer sur ce sujet de la mobilité urbaine pour les personnes à mobilité réduite.
+
+Contactez-nous !
+
+E-mail : [contact@sonarvision.fr](mailto:contact@sonarvision.fr)
+
+

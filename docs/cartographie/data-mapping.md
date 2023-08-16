@@ -58,7 +58,7 @@ https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons
 
 Ci-dessous, une image illustrant l'application de ces principes au niveau d'une intersection. L'élément sélectionné est
 le passage piéton avec signaux sonores surligné en rouge et situé en haut à gauche.
-![exemple graphe piéton](exemple_graphe_pieton.jpg 'capture d'écran illustrant le graphe piéton au niveau d'une intersection')
+![exemple graphe piéton](/img/exemple_graphe_pieton.jpg 'capture d'écran illustrant le graphe piéton au niveau d'une intersection')
 
 ## Outils mis à disposition pour la cartographie
 
@@ -76,10 +76,10 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
    clavier `B`
 3. Cliquer sur modifier le fond de carte personnalisé
 4. Ajouter l'URL
-   suivante : `http://34.163.114.80:8080/styles/SansFond/{z}/{x}/{y}.png`
+   suivante : `https://maps.sonarvision.fr/styles/SansFond/{z}/{x}/{y}.png`
 5. Enfin, cliquer sur "Ok" et sélectionner le fond de carte personnalisé
 
-![gif tuyo fond de carte](Tuto_fond_de_carte.gif 'tutoriel: comment ajouter un fond de carte personalisé à ID')
+![gif tuto fond de carte](/img/Tuto_fond_de_carte.gif 'tutoriel: comment ajouter un fond de carte personalisé à ID')
 
 #### Base de données utilisée par notre fond de carte
 
