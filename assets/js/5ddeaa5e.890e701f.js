@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[5583],{7255:s=>{s.exports=JSON.parse('{"label":"d\xe9ficient visuel","permalink":"/blog/tags/deficient-visuel","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

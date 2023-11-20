@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[4361],{3277:s=>{s.exports=JSON.parse('{"permalink":"/blog/tags/deficient-visuel","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

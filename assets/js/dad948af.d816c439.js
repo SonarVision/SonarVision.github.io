@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[3053],{321:s=>{s.exports=JSON.parse('{"label":"handicap","permalink":"/blog/tags/handicap","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

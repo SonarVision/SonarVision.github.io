@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[3851],{2892:s=>{s.exports=JSON.parse('{"label":"pi\xe9ton","permalink":"/blog/tags/pieton","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
