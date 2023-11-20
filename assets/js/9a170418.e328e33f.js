@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[840],{9848:s=>{s.exports=JSON.parse('{"label":"openstreetmap","permalink":"/blog/tags/openstreetmap","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
